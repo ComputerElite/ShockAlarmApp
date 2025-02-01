@@ -96105,7 +96105,7 @@ B.b.F(r.d,s.d)
 r.q1()},
 $S:0}
 A.abz.prototype={
-$1(a){var s=null,r=A.n("Captive portal",s,s,s,s,s,s,s,s),q=A.n("The captive portal is the website hosted on your hub itself. It's used for managing the wifi connection and account linking. Here you can enable or disable it.",s,s,s,s,s,s,s,s),p=this.a
+$1(a){var s=null,r=A.n("Captive portal",s,s,s,s,s,s,s,s),q=A.n("The captive portal is the website hosted on your hub itself. It's only available in your wifi ans is used for managing the wifi connection and account linking. Here you can enable or disable it.",s,s,s,s,s,s,s,s),p=this.a
 return A.b5(A.a([A.au(!1,A.n("Cancel",s,s,s,s,s,s,s,s),s,s,B.n,!0,s,s,s,s,new A.abw(p),s,s),A.au(!1,A.n("Enable",s,s,s,s,s,s,s,s),s,s,B.n,!0,s,s,s,s,new A.abx(p),s,s),A.au(!1,A.n("Disable",s,s,s,s,s,s,s,s),s,s,B.n,!0,s,s,s,s,new A.aby(p),s,s)],t.p),q,r)},
 $S:2}
 A.abw.prototype={
@@ -99307,7 +99307,7 @@ s=a.d
 r=a.b
 if(s)p.p(0,"Cookie","openShockSession="+r)
 else p.p(0,"OpenShockToken",r)
-p.p(0,"User-Agent","ShockAlarm/0.0.12")
+p.p(0,"User-Agent","ShockAlarm/0.0.13")
 return A.b8V(q,p)},
 jT(a,b,c){var s,r,q=A.di(a.c+b,0,null),p=t.N
 p=A.D(p,p)
@@ -99316,7 +99316,7 @@ r=a.b
 if(s)p.p(0,"Cookie","openShockSession="+r)
 else p.p(0,"OpenShockToken",r)
 p.p(0,"Content-Type","application/json")
-p.p(0,"User-Agent","ShockAlarm/0.0.12")
+p.p(0,"User-Agent","ShockAlarm/0.0.13")
 return A.b9z(q,c,p)},
 zN(a,b,c){var s,r,q=A.di(a.c+b,0,null),p=t.N
 p=A.D(p,p)
@@ -99325,7 +99325,7 @@ r=a.b
 if(s)p.p(0,"Cookie","openShockSession="+r)
 else p.p(0,"OpenShockToken",r)
 p.p(0,"Content-Type","application/json")
-p.p(0,"User-Agent","ShockAlarm/0.0.12")
+p.p(0,"User-Agent","ShockAlarm/0.0.13")
 return A.b9y(q,c,p)},
 qo(a,b,c){var s,r,q=A.di(a.c+b,0,null),p=t.N
 p=A.D(p,p)
@@ -99334,7 +99334,7 @@ r=a.b
 if(s)p.p(0,"Cookie","openShockSession="+r)
 else p.p(0,"OpenShockToken",r)
 p.p(0,"Content-Type","application/json")
-p.p(0,"User-Agent","ShockAlarm/0.0.12")
+p.p(0,"User-Agent","ShockAlarm/0.0.13")
 return A.aVu(q,c,p)},
 uo(a,b,c){return this.a3n(a,b,c)},
 a3n(a,b,c){var s=0,r=A.u(t.u),q,p=this,o,n,m
@@ -100111,7 +100111,7 @@ var $async$uz=A.p(function(a,b){if(a===1){p=b
 s=q}while(true)switch(s){case 0:q=3
 k=o.a
 j=t.N
-j=A.ak(["OpenShockSession",k.b,"User-Agent","ShockAlarm/0.0.12"],j,j)
+j=A.ak(["OpenShockSession",k.b,"User-Agent","ShockAlarm/0.0.13"],j,j)
 i=A.aN6()
 h=self
 n=new A.WK(new A.uc(new h.AbortController()),j)
