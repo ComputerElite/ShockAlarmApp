@@ -97850,7 +97850,7 @@ A.anV.prototype={
 $0(){A.a5(this.a,!1).ae()},
 $S:0}
 A.ao1.prototype={
-$0(){A.aoA(this.a.c.NQ())},
+$0(){A.aoA("Control my OpenShock shockers without registration: "+this.a.c.NQ())},
 $S:0}
 A.ao2.prototype={
 $0(){A.a5(this.b,!1).ie(A.r5(new A.anX(this.a),null,t.z))},
