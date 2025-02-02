@@ -99374,7 +99374,7 @@ s=a.d
 r=a.b
 if(s)p.p(0,"Cookie","openShockSession="+r)
 else p.p(0,"OpenShockToken",r)
-p.p(0,"User-Agent","ShockAlarm/0.0.13")
+p.p(0,"User-Agent","ShockAlarm/0.0.14")
 return A.b8Z(q,p)},
 jU(a,b,c){var s,r,q=A.di(a.c+b,0,null),p=t.N
 p=A.D(p,p)
@@ -99383,7 +99383,7 @@ r=a.b
 if(s)p.p(0,"Cookie","openShockSession="+r)
 else p.p(0,"OpenShockToken",r)
 p.p(0,"Content-Type","application/json")
-p.p(0,"User-Agent","ShockAlarm/0.0.13")
+p.p(0,"User-Agent","ShockAlarm/0.0.14")
 return A.b9D(q,c,p)},
 zO(a,b,c){var s,r,q=A.di(a.c+b,0,null),p=t.N
 p=A.D(p,p)
@@ -99392,7 +99392,7 @@ r=a.b
 if(s)p.p(0,"Cookie","openShockSession="+r)
 else p.p(0,"OpenShockToken",r)
 p.p(0,"Content-Type","application/json")
-p.p(0,"User-Agent","ShockAlarm/0.0.13")
+p.p(0,"User-Agent","ShockAlarm/0.0.14")
 return A.b9C(q,c,p)},
 qp(a,b,c){var s,r,q=A.di(a.c+b,0,null),p=t.N
 p=A.D(p,p)
@@ -99401,7 +99401,7 @@ r=a.b
 if(s)p.p(0,"Cookie","openShockSession="+r)
 else p.p(0,"OpenShockToken",r)
 p.p(0,"Content-Type","application/json")
-p.p(0,"User-Agent","ShockAlarm/0.0.13")
+p.p(0,"User-Agent","ShockAlarm/0.0.14")
 return A.aVy(q,c,p)},
 uo(a,b,c){return this.a3q(a,b,c)},
 a3q(a,b,c){var s=0,r=A.u(t.u),q,p=this,o,n,m
@@ -100220,7 +100220,7 @@ var $async$uz=A.p(function(a,b){if(a===1){p=b
 s=q}while(true)switch(s){case 0:q=3
 k=o.a
 j=t.N
-j=A.ag(["OpenShockSession",k.b,"User-Agent","ShockAlarm/0.0.13"],j,j)
+j=A.ag(["OpenShockSession",k.b,"User-Agent","ShockAlarm/0.0.14"],j,j)
 i=A.aNa()
 h=self
 n=new A.WK(new A.uc(new h.AbortController()),j)
