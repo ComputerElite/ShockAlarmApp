@@ -10,7 +10,7 @@ const RESOURCES = {"icons/Icon-512-transparent.png": "efb797a137b65b50653a2a4907
 "icons/Icon-512.png": "fffd22a56215891c889991eccd8a7859",
 "icons/Icon-maskable-192.png": "2806d119770484b438526f2704bc2685",
 "icons/Icon-192.png": "2806d119770484b438526f2704bc2685",
-"flutter_bootstrap.js": "d9dbb0b1b61249df4595bf61c5c476e4",
+"flutter_bootstrap.js": "fb0ab795b3d5c5b4e81f51f1c13e2724",
 "canvaskit/skwasm_st.wasm": "56c3973560dfcbf28ce47cebe40f3206",
 "canvaskit/skwasm_st.js": "d1326ceef381ad382ab492ba5d96f04d",
 "canvaskit/skwasm.wasm": "f0dfd99007f989368db17c9abeed5a49",
