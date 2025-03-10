@@ -29971,7 +29971,9 @@ q=A.et(J.a9(i,2),null)
 f.e=r
 f.d=q
 for(h=J.a9(i,5).split(","),g=h.length,n=0;n<g;++n){p=h[n]
-switch(p){case"1":f.f=!0
+switch(p){case"0":f.Q=!0
+break
+case"1":f.f=!0
 break
 case"2":f.r=!0
 break
@@ -29983,7 +29985,7 @@ case"5":f.y=!0
 break
 case"6":f.z=!0
 break
-case"0":f.Q=!0
+case"7":f.Q=!0
 break}}}catch(l){o=A.ap(l)
 A.dM("Error parsing cron")
 A.dM(o)}for(j=J.aI(j.h(a,"Shockers"));j.v();){k=j.gL(j)
@@ -103396,10 +103398,10 @@ $0(){var s=0,r=A.v(t.H),q,p=this,o,n,m,l,k,j
 var $async$$0=A.q(function(a,b){if(a===1)return A.r(b,r)
 while(true)switch(s){case 0:j=p.b
 A.aRQ(j,"Adding token to account")
-o=p.d
-n=A.d_(o,0,null)
+o=p.c
+n=A.d_(p.d,0,null)
 s=3
-return A.p(new A.cr().Dv(p.c,new A.am2("ShockAlarm-AlarmServer-"+n.gmz(n),A.a(["shockers.use"],t.s),null)),$async$$0)
+return A.p(new A.cr().Dv(o,new A.am2("ShockAlarm-AlarmServer-"+n.gmz(n),A.a(["shockers.use"],t.s),null)),$async$$0)
 case 3:m=b
 n=m.b
 if(n!=null){A.a_(j,!1).a_()
@@ -103415,7 +103417,7 @@ break}n=Date.now()
 l=m.a
 l.toString
 s=4
-return A.p(new A.o1().wV(p.f.a,new A.lI(1000*n,B.cM,l,o,!1,"","",!1)),$async$$0)
+return A.p(new A.o1().wV(p.f.a,new A.lI(1000*n,B.cM,l,o.d,!1,"","",!1)),$async$$0)
 case 4:k=b
 A.a_(j,!1).a_()
 o=k.b
@@ -105798,7 +105800,7 @@ if(i.w)q.push("3")
 if(i.x)q.push("4")
 if(i.y)q.push("5")
 if(i.z)q.push("6")
-if(i.Q)q.push("0")
+if(i.Q)q.push("7")
 p=q.length===0?"*":B.b.bR(q,",")
 o=i.b
 n=i.c
