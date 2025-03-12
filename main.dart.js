@@ -104331,11 +104331,11 @@ break
 case 1:return A.r(q,r)}})
 return A.t($async$zV,r)},
 ft(a,b){var s=t.N
-return A.b_m(A.d2(a.d+b,0,null),A.aa(["Authorization","Bearer "+a.c,"User-Agent","ShockAlarm/0.0.17"],s,s))},
+return A.b_m(A.d2(a.d+b,0,null),A.aa(["Authorization","Bearer "+a.c,"User-Agent","ShockAlarm/0.0.19"],s,s))},
 fY(a,b,c){var s=t.N
-return A.b_J(A.d2(a.d+b,0,null),c,A.aa(["Authorization","Bearer "+a.c,"Content-Type","application/json","User-Agent","ShockAlarm/0.0.17"],s,s))},
+return A.b_J(A.d2(a.d+b,0,null),c,A.aa(["Authorization","Bearer "+a.c,"Content-Type","application/json","User-Agent","ShockAlarm/0.0.19"],s,s))},
 m0(a,b,c){var s=t.N
-return A.aSy(A.d2(a.d+b,0,null),c,A.aa(["Authorization","Bearer "+a.c,"Content-Type","application/json","User-Agent","ShockAlarm/0.0.17"],s,s))}}
+return A.aSy(A.d2(a.d+b,0,null),c,A.aa(["Authorization","Bearer "+a.c,"Content-Type","application/json","User-Agent","ShockAlarm/0.0.19"],s,s))}}
 A.Pe.prototype={}
 A.ci.prototype={
 vN(a){return this.abj(a)},
@@ -104388,7 +104388,7 @@ s=a.e
 r=a.c
 if(s)p.p(0,"Cookie","openShockSession="+r)
 else p.p(0,"OpenShockToken",r)
-p.p(0,"User-Agent","ShockAlarm/0.0.17")
+p.p(0,"User-Agent","ShockAlarm/0.0.19")
 return A.b_m(q,p)},
 fY(a,b,c){var s,r,q=A.d2(a.d+b,0,null),p=t.N
 p=A.D(p,p)
@@ -104397,7 +104397,7 @@ r=a.c
 if(s)p.p(0,"Cookie","openShockSession="+r)
 else p.p(0,"OpenShockToken",r)
 p.p(0,"Content-Type","application/json")
-p.p(0,"User-Agent","ShockAlarm/0.0.17")
+p.p(0,"User-Agent","ShockAlarm/0.0.19")
 return A.b_J(q,c,p)},
 AU(a,b,c){var s,r,q=A.d2(a.d+b,0,null),p=t.N
 p=A.D(p,p)
@@ -104406,7 +104406,7 @@ r=a.c
 if(s)p.p(0,"Cookie","openShockSession="+r)
 else p.p(0,"OpenShockToken",r)
 p.p(0,"Content-Type","application/json")
-p.p(0,"User-Agent","ShockAlarm/0.0.17")
+p.p(0,"User-Agent","ShockAlarm/0.0.19")
 return A.bfB(q,c,p)},
 m0(a,b,c){var s,r,q=A.d2(a.d+b,0,null),p=t.N
 p=A.D(p,p)
@@ -104415,7 +104415,7 @@ r=a.c
 if(s)p.p(0,"Cookie","openShockSession="+r)
 else p.p(0,"OpenShockToken",r)
 p.p(0,"Content-Type","application/json")
-p.p(0,"User-Agent","ShockAlarm/0.0.17")
+p.p(0,"User-Agent","ShockAlarm/0.0.19")
 return A.aSy(q,c,p)},
 vt(a,b,c){return this.a5C(a,b,c)},
 a5C(a,b,c){var s=0,r=A.u(t.u),q,p=this,o,n,m
@@ -105275,7 +105275,7 @@ var $async$vC=A.p(function(a,b){if(a===1){p.push(b)
 s=q}while(true)switch(s){case 0:q=3
 k=o.a
 j=t.N
-j=A.aa(["OpenShockSession",k.c,"User-Agent","ShockAlarm/0.0.17"],j,j)
+j=A.aa(["OpenShockSession",k.c,"User-Agent","ShockAlarm/0.0.19"],j,j)
 i=A.aSx()
 h=self
 n=new A.ZG(new A.vj(new h.AbortController()),j)
