@@ -30050,12 +30050,12 @@ b3Y(a){var s="serverId",r="components",q=J.ae(a),p=new A.fv(q.h(a,"id"),q.h(a,"n
 if(q.h(a,s)!=null)p.b=q.h(a,s)
 if(q.h(a,r)!=null){q=J.hH(t.j.a(q.h(a,r)),new A.a84(),t.mV)
 p.d=A.a1(q,!0,q.$ti.i("aw.E"))}return p},
-b3X(a){var s,r,q,p,o="Components",n=J.ae(a),m=new A.fv(-1,n.h(a,"Name"),A.a([],t.mK))
+b3X(a){var s,r,q,p,o,n="Components",m=J.ae(a),l=new A.fv(-1,m.h(a,"Name"),A.a([],t.mK)),k=m.h(a,"Id")!=null?l.b=m.h(a,"Id"):null
 for(s=$.aJ.r,r=s.length,q=0;q<r;++q){p=s[q]
-if(p.b==null){m.a=p.a
-break}}if(n.h(a,"Id")!=null)m.b=n.h(a,"Id")
-if(n.h(a,o)!=null){n=J.hH(t.j.a(n.h(a,o)),new A.a83(),t.mV)
-m.d=A.a1(n,!0,n.$ti.i("aw.E"))}return m},
+o=p.b
+if(o==null?k==null:o===k){l.a=p.a
+break}}if(m.h(a,n)!=null){m=J.hH(t.j.a(m.h(a,n)),new A.a83(),t.mV)
+l.d=A.a1(m,!0,m.$ti.i("aw.E"))}return l},
 b3W(a){var s,r,q,p,o,n="ControlType",m=new A.fu(B.aw),l=J.ae(a)
 m.a=l.h(a,"ShockerId")
 m.d=l.h(a,"Intensity")
