@@ -106478,7 +106478,7 @@ A.bI(q,q,!0,q,new A.aku(this.b,r),s,q,q,!0,!0,t.z)
 r.k1=null},
 $S:670}
 A.aku.prototype={
-$1(a){var s=null,r=A.v("Hub online",s,s,s,s,s,s,s,s),q=t.p,p=A.aE(A.a([A.v("Your hub has come online under your account! You can now use it.",s,s,s,s,s,s,s,s),A.v("In case you didn't enter your pair code yet and see this, here is your pair code again: "+A.o(this.a.a),s,s,s,s,s,s,s,s)],q),B.j,B.k,B.a4,10)
+$1(a){var s=null,r=A.v("Hub paired!",s,s,s,s,s,s,s,s),q=t.p,p=A.aE(A.a([A.v("Your hub has come online under your account! You can now use it.",s,s,s,s,s,s,s,s),A.v("In case you didn't enter your pair code yet, here is your pair code again: "+A.o(this.a.a),s,s,s,s,s,s,s,s)],q),B.j,B.k,B.a4,10)
 return A.c8(A.a([A.aJ(!1,A.v("Ok",s,s,s,s,s,s,s,s),s,s,!0,s,s,s,s,new A.aks(this.b,a),s,s)],q),p,r)},
 $S:8}
 A.aks.prototype={
