@@ -108919,7 +108919,7 @@ $1(a){return A.b6K()},
 $S:266}
 A.axu.prototype={
 $1(a){var s=null,r=A.m("Add Share Link",s,s,s,s,s,s,s,s),q=A.m("What do you want to do?",s,s,s,s,s,s,s,s)
-return A.bQ(A.a([A.aD(!1,A.m("Add share link",s,s,s,s,s,s,s,s),s,s,!0,s,s,s,s,new A.axq(a),s,s),A.aD(!1,A.m("Create new",s,s,s,s,s,s,s,s),s,s,!0,s,s,s,s,new A.axr(a,this.a),s,s),A.aD(!1,A.m("Cancel",s,s,s,s,s,s,s,s),s,s,!0,s,s,s,s,new A.axs(a),s,s)],t.p),q,r)},
+return A.bQ(A.a([A.aD(!1,A.m("Add existing share link",s,s,s,s,s,s,s,s),s,s,!0,s,s,s,s,new A.axq(a),s,s),A.aD(!1,A.m("Create new share link",s,s,s,s,s,s,s,s),s,s,!0,s,s,s,s,new A.axr(a,this.a),s,s),A.aD(!1,A.m("Cancel",s,s,s,s,s,s,s,s),s,s,!0,s,s,s,s,new A.axs(a),s,s)],t.p),q,r)},
 $S:8}
 A.axq.prototype={
 $0(){var s=0,r=A.u(t.H),q=this
@@ -114128,7 +114128,9 @@ j=p.b
 k.c=j
 k.d=$.a2.t9(j)
 k.e=i.r.a
-q.push(k)}}i.e=f.h(a,"name")
+q.push(k)}}s=i.r
+i.w=s==null?null:s.a
+i.e=f.h(a,"name")
 if(f.h(a,"tokenId")!=null)i.w=f.h(a,"tokenId")},
 cM(){var s,r,q=this,p=q.d,o=q.e,n=q.a.HS(),m=q.b
 m=m==null?null:m.HS()
