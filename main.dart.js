@@ -111538,8 +111538,7 @@ S(){return new A.K_(A.a([],t.q1),null,null)}}
 A.K_.prototype={
 aq(){var s,r,q=this,p=null
 q.aF()
-if($.a2.nT(!1)==null){A.bK("Not logged in",u.F)
-return}$.a2.dy=q.gaL6()
+$.a2.dy=q.gaL6()
 q.I6()
 s=A.bp(p,A.cK(0,0,0,3),0,p,1,p,q)
 s.a6W(0,!0)
@@ -111547,7 +111546,9 @@ q.d=s
 q.e=new A.aS(s,new A.dq(B.m6,B.RV),t.IC.i("aS<aH.T>"))
 r=t.Y
 q.f=new A.aS(A.c8(B.dK,s,p),new A.aC(1,1.05,r),r.i("aS<aH.T>"))
-$.b2w().nQ(0,!0)},
+$.b2w().nQ(0,!0)
+if($.a2.nT(!1)==null){A.bK("Not logged in",u.F)
+return}},
 I6(){var s=0,r=A.u(t.H),q=this,p,o,n,m
 var $async$I6=A.p(function(a,b){if(a===1)return A.q(b,r)
 while(true)switch(s){case 0:n=t.q1
