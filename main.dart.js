@@ -115843,11 +115843,11 @@ break
 case 1:return A.r(q,r)}})
 return A.t($async$Bv,r)},
 dW(a,b){var s=t.N
-return A.Q_(A.cv(a.d+b,0,null),A.aj(["Authorization","Bearer "+a.c,"User-Agent","ShockAlarm/0.3.3"],s,s))},
+return A.Q_(A.cv(a.d+b,0,null),A.aj(["Authorization","Bearer "+a.c,"User-Agent","ShockAlarm/0.3.4"],s,s))},
 fv(a,b,c){var s=t.N
-return A.bcV(A.cv(a.d+b,0,null),c,A.aj(["Authorization","Bearer "+a.c,"Content-Type","application/json","User-Agent","ShockAlarm/0.3.3"],s,s))},
+return A.bcV(A.cv(a.d+b,0,null),c,A.aj(["Authorization","Bearer "+a.c,"Content-Type","application/json","User-Agent","ShockAlarm/0.3.4"],s,s))},
 iJ(a,b,c){var s=t.N
-return A.b4e(A.cv(a.d+b,0,null),c,A.aj(["Authorization","Bearer "+a.c,"Content-Type","application/json","User-Agent","ShockAlarm/0.3.3"],s,s))}}
+return A.b4e(A.cv(a.d+b,0,null),c,A.aj(["Authorization","Bearer "+a.c,"Content-Type","application/json","User-Agent","ShockAlarm/0.3.4"],s,s))}}
 A.aek.prototype={
 z3(){var s=0,r=A.u(t.z),q=this,p,o,n,m
 var $async$z3=A.p(function(a,b){if(a===1)return A.q(b,r)
@@ -115994,7 +115994,7 @@ l=a.e
 k=a.c
 if(l===B.bD)J.cy(m,"Cookie","openShockSession="+k)
 else J.cy(m,"OpenShockToken",k)
-J.cy(m,"User-Agent","ShockAlarm/0.3.3")
+J.cy(m,"User-Agent","ShockAlarm/0.3.4")
 s=7
 return A.m(A.Q_(n,m),$async$dW)
 case 7:m=d
@@ -116029,7 +116029,7 @@ k=a.c
 if(l===B.bD)J.cy(m,"Cookie","openShockSession="+k)
 else J.cy(m,"OpenShockToken",k)
 J.cy(m,"Content-Type","application/json")
-J.cy(m,"User-Agent","ShockAlarm/0.3.3")
+J.cy(m,"User-Agent","ShockAlarm/0.3.4")
 s=7
 return A.m(A.bcV(n,c,m),$async$fv)
 case 7:m=e
@@ -116064,7 +116064,7 @@ k=a.c
 if(l===B.bD)J.cy(m,"Cookie","openShockSession="+k)
 else J.cy(m,"OpenShockToken",k)
 J.cy(m,"Content-Type","application/json")
-J.cy(m,"User-Agent","ShockAlarm/0.3.3")
+J.cy(m,"User-Agent","ShockAlarm/0.3.4")
 s=7
 return A.m(A.buk(n,c,m),$async$oe)
 case 7:m=e
@@ -116099,7 +116099,7 @@ k=a.c
 if(l===B.bD)J.cy(m,"Cookie","openShockSession="+k)
 else J.cy(m,"OpenShockToken",k)
 J.cy(m,"Content-Type","application/json")
-J.cy(m,"User-Agent","ShockAlarm/0.3.3")
+J.cy(m,"User-Agent","ShockAlarm/0.3.4")
 s=7
 return A.m(A.bun(n,c,m),$async$CF)
 case 7:m=e
@@ -116134,7 +116134,7 @@ k=a.c
 if(l===B.bD)J.cy(m,"Cookie","openShockSession="+k)
 else J.cy(m,"OpenShockToken",k)
 J.cy(m,"Content-Type","application/json")
-J.cy(m,"User-Agent","ShockAlarm/0.3.3")
+J.cy(m,"User-Agent","ShockAlarm/0.3.4")
 s=7
 return A.m(A.b4e(n,c,m),$async$iJ)
 case 7:m=e
@@ -117220,7 +117220,7 @@ j=t.N
 n=A.B(j,j)
 j=o.a
 if(j.e!==B.c1)J.cy(n,"OpenShockSession",j.c)
-J.cy(n,"User-Agent","ShockAlarm/0.3.3")
+J.cy(n,"User-Agent","ShockAlarm/0.3.4")
 i=A.b4d()
 i=new A.xs(new v.G.AbortController())
 m=new A.a2F(i,n)
@@ -117376,7 +117376,7 @@ s=q.e
 r=B.c.bv(s.d,"https")?"wss":"ws"
 r=A.cv(r+"://"+a+"/1/ws/live/"+q.d.b,0,null)
 s=s.c
-s=A.bjB(r,A.aj(["User-Agent","ShockAlarm/0.3.3","OpenShockSession",s],t.N,t.z))
+s=A.bjB(r,A.aj(["User-Agent","ShockAlarm/0.3.4","OpenShockSession",s],t.N,t.z))
 q.a=s
 s.b.Qz(new A.anh(q),new A.ani(q))},
 Sw(){var s=this.b
