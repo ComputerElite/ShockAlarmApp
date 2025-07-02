@@ -32718,11 +32718,12 @@ _.f=f
 _.r=g
 _.w=h
 _.x=!1},
-fq:function fq(a,b,c,d){var _=this
+fq:function fq(a,b,c,d,e){var _=this
 _.a=a
 _.b=b
 _.c=c
-_.d=d},
+_.d=d
+_.e=e},
 h9:function h9(a,b,c){var _=this
 _.a=a
 _.b=null
@@ -34458,7 +34459,7 @@ $S:4}
 A.aZG.prototype={
 $1(a){var s=A.h5().b
 s=s==null?null:s.canvasKitBaseUrl
-return(s==null?"https://www.gstatic.com/flutter-canvaskit/109150893958777c8f2215f6cfd3e89e984e8dea/":s)+a},
+return(s==null?"https://www.gstatic.com/flutter-canvaskit/dd93de6fb1776398bf586cbd477deade1391c7e4/":s)+a},
 $S:83}
 A.aej.prototype={
 ee(a,b){var s,r=this.a
@@ -113660,42 +113661,43 @@ Rv(a){var s=this.a.d
 if(s<=300)return 0
 return Math.pow((a-300)/(s-300),0.5)},
 QF(a){return 300+B.d.bZ(Math.pow(a,2)*(this.a.d-300)/100)*100},
-F(a){var s,r,q,p,o,n,m=this,l=null,k=m.a
-k.c.a6k(k.d,k.e)
+F(a){var s,r,q,p,o,n,m,l=this,k=null,j=l.a
+j.c.a6k(j.d,j.e)
 s=A.A(a)
-k=t.p
-r=A.a([],k)
-q=m.a
-if(q.f){p=q.r?A.fA(B.an,l,l):A.fA(q.x,l,l)
+j=t.p
+r=A.a([],j)
+q=l.a
+if(q.f){p=q.r?A.fA(B.an,k,k):A.fA(q.x,k,k)
 q=q.c
 o=s.ok.f
-q=A.ai(A.a([p,A.m("Intensity: "+q.SM(q.b,!0),l,l,l,l,o,l,l,l)],k),B.f,l,B.aM,B.h,10,l)
-p=$.a_.z.c&&m.a.w
-n=m.a
+q=A.ai(A.a([p,A.m("Intensity: "+q.SM(q.b,!0),k,k,k,k,o,k,k,k)],j),B.f,k,B.aM,B.h,10,k)
+p=$.a_.z.c&&l.a.w
+n=l.a
 if(p){p=n.c.b
 n=n.e
-p=A.atc(n,l,n,0,new A.aml(m),p)}else{p=n.c.b
-p=A.aBC(n.e,0,new A.amm(m),p.a)}p=A.a([q,p],k)
-q=m.a
-if(q.r){n=A.fA(B.ac,l,l)
+m=n<=0?1:n
+p=A.atc(m,k,n,0,new A.aml(l),p)}else{p=n.c.b
+p=A.aBC(n.e,0,new A.amm(l),p.a)}p=A.a([q,p],j)
+q=l.a
+if(q.r){n=A.fA(B.ac,k,k)
 q=q.c
-o=A.ai(A.a([n,A.m("Intensity: "+q.SM(q.c,!0),l,l,l,l,o,l,l,l)],k),B.f,l,B.aM,B.h,10,l)
-q=$.a_.z.c&&m.a.w
-n=m.a
+o=A.ai(A.a([n,A.m("Intensity: "+q.SM(q.c,!0),k,k,k,k,o,k,k,k)],j),B.f,k,B.aM,B.h,10,k)
+q=$.a_.z.c&&l.a.w
+n=l.a
 if(q){q=n.c.c
 n=n.e
-q=A.atc(n,l,n,0,new A.amn(m),q)}else{q=n.c.c
-q=A.aBC(n.e,0,new A.amo(m),q.a)}B.b.O(p,A.a([o,q],k))}B.b.O(r,p)}q=A.aH(B.Kx,l,l,l)
-p=m.a.c
+q=A.atc(n,k,n,0,new A.amn(l),q)}else{q=n.c.c
+q=A.aBC(n.e,0,new A.amo(l),q.a)}B.b.O(p,A.a([o,q],j))}B.b.O(r,p)}q=A.aH(B.Kx,k,k,k)
+p=l.a.c
 o=p.a
-r.push(A.ai(A.a([q,A.m("Duration: "+p.SN(new A.cp(o.a/1000,o.b/1000),!1," s"),l,l,l,l,s.ok.f,l,l,l)],k),B.f,l,B.aM,B.h,10,l))
-k=$.a_.z.d&&m.a.w
-q=m.a
-if(k){k=m.Rv(q.c.a.a)
-q=m.Rv(m.a.c.a.b)
-q=A.atc(m.a.d,l,1,0,new A.amp(m),new A.cp(k,q))
-k=q}else k=A.aBC(1,0,new A.amq(m),m.Rv(q.c.a.a))
-r.push(k)
+r.push(A.ai(A.a([q,A.m("Duration: "+p.SN(new A.cp(o.a/1000,o.b/1000),!1," s"),k,k,k,k,s.ok.f,k,k,k)],j),B.f,k,B.aM,B.h,10,k))
+j=$.a_.z.d&&l.a.w
+q=l.a
+if(j){j=l.Rv(q.c.a.a)
+q=l.Rv(l.a.c.a.b)
+q=A.atc(l.a.d,k,1,0,new A.amp(l),new A.cp(j,q))
+j=q}else j=A.aBC(1,0,new A.amq(l),l.Rv(q.c.a.a))
+r.push(j)
 return A.aA(r,B.f,B.k,B.h,0,B.m)}}
 A.aml.prototype={
 $1(a){var s=this.a
@@ -114064,7 +114066,7 @@ Nh(){var s=this
 s.e.mG(s.d)
 s.r=!1
 s.f.$0()},
-aB2(){B.b.C(this.d.d,new A.fq(25,1000,B.ac,0))
+aB2(){B.b.C(this.d.d,new A.fq(25,1000,B.ac,0,1000*Date.now()))
 this.D(new A.aDV())},
 aJ1(a){var s=this.d
 B.b.G(s.d,a)
@@ -114130,7 +114132,7 @@ $S:0}
 A.aE5.prototype={
 $1(a){var s=a.a,r=a.b,q=a.c
 q=q==null?null:q.a
-return new A.rw(a,this.a.gaJ0(),new A.bc(""+s+"-"+r+"-"+A.v(q)+"-"+a.d,t.Nf))},
+return new A.rw(a,this.a.gaJ0(),new A.bc(""+s+"-"+r+"-"+A.v(q)+"-"+a.d+"-"+a.e,t.Nf))},
 $S:753}
 A.aE6.prototype={
 $0(){var s=null,r=this.b
@@ -115917,11 +115919,11 @@ break
 case 1:return A.r(q,r)}})
 return A.t($async$Bv,r)},
 dW(a,b){var s=t.N
-return A.Q0(A.cv(a.d+b,0,null),A.ak(["Authorization","Bearer "+a.c,"User-Agent","ShockAlarm/0.3.5"],s,s))},
+return A.Q0(A.cv(a.d+b,0,null),A.ak(["Authorization","Bearer "+a.c,"User-Agent","ShockAlarm/0.3.6"],s,s))},
 fw(a,b,c){var s=t.N
-return A.bd5(A.cv(a.d+b,0,null),c,A.ak(["Authorization","Bearer "+a.c,"Content-Type","application/json","User-Agent","ShockAlarm/0.3.5"],s,s))},
+return A.bd5(A.cv(a.d+b,0,null),c,A.ak(["Authorization","Bearer "+a.c,"Content-Type","application/json","User-Agent","ShockAlarm/0.3.6"],s,s))},
 iJ(a,b,c){var s=t.N
-return A.b4p(A.cv(a.d+b,0,null),c,A.ak(["Authorization","Bearer "+a.c,"Content-Type","application/json","User-Agent","ShockAlarm/0.3.5"],s,s))}}
+return A.b4p(A.cv(a.d+b,0,null),c,A.ak(["Authorization","Bearer "+a.c,"Content-Type","application/json","User-Agent","ShockAlarm/0.3.6"],s,s))}}
 A.aem.prototype={
 z3(){var s=0,r=A.u(t.z),q=this,p,o,n,m
 var $async$z3=A.p(function(a,b){if(a===1)return A.q(b,r)
@@ -116068,7 +116070,7 @@ l=a.e
 k=a.c
 if(l===B.bD)J.cy(m,"Cookie","openShockSession="+k)
 else J.cy(m,"OpenShockToken",k)
-J.cy(m,"User-Agent","ShockAlarm/0.3.5")
+J.cy(m,"User-Agent","ShockAlarm/0.3.6")
 s=7
 return A.n(A.Q0(n,m),$async$dW)
 case 7:m=d
@@ -116103,7 +116105,7 @@ k=a.c
 if(l===B.bD)J.cy(m,"Cookie","openShockSession="+k)
 else J.cy(m,"OpenShockToken",k)
 J.cy(m,"Content-Type","application/json")
-J.cy(m,"User-Agent","ShockAlarm/0.3.5")
+J.cy(m,"User-Agent","ShockAlarm/0.3.6")
 s=7
 return A.n(A.bd5(n,c,m),$async$fw)
 case 7:m=e
@@ -116138,7 +116140,7 @@ k=a.c
 if(l===B.bD)J.cy(m,"Cookie","openShockSession="+k)
 else J.cy(m,"OpenShockToken",k)
 J.cy(m,"Content-Type","application/json")
-J.cy(m,"User-Agent","ShockAlarm/0.3.5")
+J.cy(m,"User-Agent","ShockAlarm/0.3.6")
 s=7
 return A.n(A.buw(n,c,m),$async$oe)
 case 7:m=e
@@ -116173,7 +116175,7 @@ k=a.c
 if(l===B.bD)J.cy(m,"Cookie","openShockSession="+k)
 else J.cy(m,"OpenShockToken",k)
 J.cy(m,"Content-Type","application/json")
-J.cy(m,"User-Agent","ShockAlarm/0.3.5")
+J.cy(m,"User-Agent","ShockAlarm/0.3.6")
 s=7
 return A.n(A.buz(n,c,m),$async$CF)
 case 7:m=e
@@ -116208,7 +116210,7 @@ k=a.c
 if(l===B.bD)J.cy(m,"Cookie","openShockSession="+k)
 else J.cy(m,"OpenShockToken",k)
 J.cy(m,"Content-Type","application/json")
-J.cy(m,"User-Agent","ShockAlarm/0.3.5")
+J.cy(m,"User-Agent","ShockAlarm/0.3.6")
 s=7
 return A.n(A.b4p(n,c,m),$async$iJ)
 case 7:m=e
@@ -117294,7 +117296,7 @@ j=t.N
 n=A.B(j,j)
 j=o.a
 if(j.e!==B.c1)J.cy(n,"OpenShockSession",j.c)
-J.cy(n,"User-Agent","ShockAlarm/0.3.5")
+J.cy(n,"User-Agent","ShockAlarm/0.3.6")
 i=A.b4o()
 i=new A.xt(new v.G.AbortController())
 m=new A.a2H(i,n)
@@ -117450,7 +117452,7 @@ s=q.e
 r=B.c.bv(s.d,"https")?"wss":"ws"
 r=A.cv(r+"://"+a+"/1/ws/live/"+q.d.b,0,null)
 s=s.c
-s=A.bjM(r,A.ak(["User-Agent","ShockAlarm/0.3.5","OpenShockSession",s],t.N,t.z))
+s=A.bjM(r,A.ak(["User-Agent","ShockAlarm/0.3.6","OpenShockSession",s],t.N,t.z))
 q.a=s
 s.b.Qz(new A.anj(q),new A.ank(q))},
 Sw(){var s=this.b
@@ -117566,13 +117568,13 @@ $1(a){return a.cJ()},
 $S:235}
 A.acJ.prototype={
 $1(a){var s=J.ab(a),r=s.h(a,"intensity"),q=s.h(a,"duration"),p=J.d(s.h(a,"type"),-1)?null:B.h6[s.h(a,"type")]
-return new A.fq(r,q,p,s.h(a,"time"))},
+return new A.fq(r,q,p,s.h(a,"time"),1000*Date.now())},
 $S:234}
 A.acI.prototype={
 $1(a){var s="ControlType",r=J.ab(a),q=r.h(a,"Intensity"),p=r.h(a,"Duration"),o=J.d(r.h(a,s),-1)?null:B.h6[r.h(a,s)]
 r=r.h(a,"TriggerSeconds")
 r=typeof r=="number"?r:null
-return new A.fq(q,p,o,B.d.bZ(r==null?0:r))},
+return new A.fq(q,p,o,B.d.bZ(r==null?0:r),1000*Date.now())},
 $S:234}
 A.acK.prototype={
 $1(a){var s=a.a,r=a.b,q=a.c
