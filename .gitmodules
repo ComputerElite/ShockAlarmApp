@@ -4,3 +4,6 @@
 [submodule "battery_optimization_helper"]
 	path = battery_optimization_helper
 	url = https://github.com/ComputerElite/battery_optimization_helper
+[submodule "cloudflare_turnstile"]
+	path = cloudflare_turnstile
+	url = https://github.com/ComputerElite/cloudflare_turnstile

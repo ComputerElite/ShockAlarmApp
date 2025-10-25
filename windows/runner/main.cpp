@@ -4,6 +4,9 @@
 
 #include "flutter_window.h"
 #include "utils.h"
+//Introduce the source code of this plugin into your own project
+#include "webview_cef/webview_cef_plugin_c_api.h"
+
 
 int APIENTRY wWinMain(_In_ HINSTANCE instance, _In_opt_ HINSTANCE prev,
                       _In_ wchar_t *command_line, _In_ int show_command) {
@@ -31,11 +34,15 @@ int APIENTRY wWinMain(_In_ HINSTANCE instance, _In_opt_ HINSTANCE prev,
     return EXIT_FAILURE;
   }
   window.SetQuitOnClose(true);
+  initCEFProcesses();
 
   ::MSG msg;
   while (::GetMessage(&msg, nullptr, 0, 0)) {
     ::TranslateMessage(&msg);
     ::DispatchMessage(&msg);
+
+    //add this line to enable cef keybord input, and enable to post messages to flutter engine thread from cef message loop thread.
+    handleWndProcForCEF(msg.hwnd, msg.message, msg.wParam, msg.lParam);
   }
 
   ::CoUninitialize();

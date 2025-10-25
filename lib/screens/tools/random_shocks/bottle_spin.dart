@@ -213,7 +213,7 @@ class _BottleSpinScreenState extends State<BottleSpinScreen> {
                                 double deltaY =
                                     details.globalPosition.dy - globalCenter.dy;
                                 double a = atan2(deltaY, deltaX);
-                                if (requireSubtractionOfPi) {
+                                if (requireSubtractionOfPi) { 
                                   a = a - pi;
                                 }
                                 deltaAngle = isCounterclockwise(a, angle) ? 1 : -1;

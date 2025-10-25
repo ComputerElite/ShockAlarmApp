@@ -6,6 +6,7 @@ list(APPEND FLUTTER_PLUGIN_LIST
   dynamic_color
   share_plus
   url_launcher_windows
+  webview_cef
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST

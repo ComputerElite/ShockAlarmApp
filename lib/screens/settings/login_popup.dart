@@ -26,7 +26,7 @@ class _LoginPopupState extends State<LoginPopup> {
   @override
   void initState() {
     widget.serverController.text = "https://api.openshock.app";
-    if(Platform.isLinux || Platform.isWindows || AlarmListManager.getInstance().settings.forceLoginV1) widget.useTurnstile = false;
+    if(AlarmListManager.getInstance().settings.forceLoginV1) widget.useTurnstile = false;
     super.initState();
     reloadBackendData();
   }
@@ -73,11 +73,10 @@ class _LoginPopupState extends State<LoginPopup> {
                         controller: widget.passwordController,
                         autofillHints: [AutofillHints.password],
                       ),
-                      if(widget.backendInfo != null && useTurnstile) CloudFlareTurnstile(
+                      if(widget.backendInfo != null && useTurnstile) CloudflareTurnstile(
                         siteKey: widget.backendInfo!.turnstileSiteKey!, //Change with your site key
                         baseUrl: widget.backendInfo!.frontendUrl,
-                        mode: TurnstileMode.nonInteractive,
-                        onTokenRecived: (token) {
+                        onTokenReceived: (token) {
                           widget.turnstileToken = token;
                         },
                         onTokenExpired: reloadBackendData,

@@ -48,12 +48,13 @@ dependencies:
   fl_chart: ^0.70.2
   universal_html: ^2.2.4
   wakelock_plus: ^1.2.10
-  web_socket_channel: ^2.4.5
   battery_optimization_helper:
     path: ./battery_optimization_helper
+  cloudflare_turnstile:
+    path: ./cloudflare_turnstile
   package_info_plus: ^8.3.0
   vibration: ^3.1.3
-  cloudflare_turnstile: ^2.1.5
+  web_socket_channel: ^2.4.5
 
 dev_dependencies:
   flutter_test:
