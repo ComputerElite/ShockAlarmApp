@@ -112863,7 +112863,7 @@ A.aYy.prototype={
 $0(){var s,r,q,p,o=this.a
 if(B.b.n(o.a.d.at,B.em))s=o.a.d.at.length>1?"You can unpause it by pressing the play button here and":"You can unpause it by pressing the play button here"
 else s="You can unpause it by pressing the play button"
-if(B.b.n(o.a.d.at,B.ng))s+=" on the shockers page"
+if(B.b.n(o.a.d.at,B.ng))s+=" on the devices page"
 r=o.a.d
 q=r.b
 p=A.b([],t.s)
@@ -116375,7 +116375,7 @@ case 3:m=b
 A.a0(p.b,!1).iE(null)
 if(m!=null){A.bG("Error accepting invite",m)
 s=1
-break}A.es("Invite accepted","You successfully accepted the invite by "+n.Ca()+". You can now control their shockers via the shockers page")
+break}A.es("Invite accepted","You successfully accepted the invite by "+n.Ca()+". You can now control their shockers via the devices page")
 $.U.fX()
 o.d.$0()
 case 1:return A.q(q,r)}})
