@@ -1,0 +1,3 @@
+**Changelog:**
+- Upgraded to flutter 3.35.7
+- Upgraded almost all dependencies
