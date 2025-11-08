@@ -1,3 +1,0 @@
-**Changelog:**
-- Playback of live patterns now stops when the type of the control is changed
-- Enforcing a hard limit won't show the confirm dialog anymore if at the highest intensity

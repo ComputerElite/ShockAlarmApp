@@ -1,3 +1,0 @@
-**Changelog:**
-- Added fastlane metadata
-- Added user and token name on token

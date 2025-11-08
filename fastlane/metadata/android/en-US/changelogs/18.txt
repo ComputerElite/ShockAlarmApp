@@ -1,6 +1,0 @@
-**Changelog:**
-- Fixed alarms not updating when creating a new one
-- Added AlarmServer support (You can finally shock your friends on time even on Web or when your phone is off)
-- Updated settings page to hide login button once you're logged in.
-- Fixed potential crash with logs ig
-- Fixed Alarm tone UI

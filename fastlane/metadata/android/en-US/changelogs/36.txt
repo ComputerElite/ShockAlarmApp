@@ -1,6 +1,0 @@
-**Changelog:**
-- Added update check via GitHub api
-- Fixed drop down in Random screen not remembering what was selected
-- Added Spin the bottle to Random shocks screen (Settings -> More tools -> Random shocks -> dice icon)
-- Fixed live control logs always saying 30s
-- Updated logic to use shockers with highest permissions even if multiple users/share links have the shocker. That way even if you add a share link with less permissions than another one you'll have the one with the highest permissions

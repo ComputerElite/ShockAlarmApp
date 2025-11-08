@@ -1,2 +1,0 @@
-**Changelog:**
-- In non grouped shocker view you can now select multiple shockers to seperately set intensity for each shocker but trigger them the same time

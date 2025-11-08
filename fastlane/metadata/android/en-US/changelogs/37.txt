@@ -1,2 +1,0 @@
-**Changelog:**
-- Added option to increase action duration to 65536 ms maximum instead of 30000ms

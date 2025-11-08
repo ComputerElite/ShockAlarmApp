@@ -1,8 +1,0 @@
-**Changelog:**
-- Added option to create logs for live controls (as this is client side logging it will not log what others do to you!!!; enable in settings)
-- small change to logs page due to prior change
-- Removed custom name from controls. Therefore the app name 'ShockAlarm' will no longer appear in logs
-- Live control now disconnects from websockets when you disable it
-- Added shocker id and hub id to respective edit pages
-- Added hub token regenerating
-- When your hub comes online after pairing you'll now get a pop up telling you that you're done.

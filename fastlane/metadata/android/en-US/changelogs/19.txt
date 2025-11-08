@@ -1,5 +1,0 @@
-**Changelog:**
-- Internal code cleanup regarding pop ups
-- Updated a few error messages
-- Fixed issue with duplicate logs
-- Alarm tones can now be triggered via the normal devices page (enable via settings)

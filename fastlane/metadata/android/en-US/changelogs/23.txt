@@ -1,5 +1,0 @@
-**Changelog:**
-- Updated account edit icon
-- Added bottom screen under more tools (live log and emergency stop)
-- Pause state of shockers are now updated once they are paused by the other party if platform supports websocket
-- Fixed grouped shocker screen jumping to start of list all the time (may have introduced bugs I haven't found)

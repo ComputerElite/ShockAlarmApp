@@ -1,4 +1,0 @@
-**Changelog:**
-- Change send interval from 50ms to whatever the hub requests
-- Fixed logs not loading on second entering
-- Added refined support for multi server login

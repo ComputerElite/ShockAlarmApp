@@ -1,4 +1,0 @@
-**Changelog:**
-- Shockers without sound permission will now vibrate when controlling multiple shockers
-- Update pause/resume all button with icons
-- Added web compatability

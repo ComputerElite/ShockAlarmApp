@@ -1,2 +1,0 @@
-**Changelog:**
-- Added confirm shock dialog which can optionally be enabled

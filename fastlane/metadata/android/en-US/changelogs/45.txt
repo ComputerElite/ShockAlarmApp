@@ -1,7 +1,0 @@
-**Changelog:**
-- Added incoming invites to top of devices page
-- Fixed reference from 'shocker' page to 'devices' page in invite accepted dialog
-- Fix shocker name overflow in non grouped control page
-- Removed 'No shockers selected' text from devices page as it just looks weird (if you even see it)
-- Fixed crash which could occurr when opening the app with the shares page last opened
-- Fixed padding slightly on desktop and mobile to be dynamic

@@ -1,3 +1,0 @@
-**Changelog:**
-- Fixed stop button
-- Fixed request spam for captive portal

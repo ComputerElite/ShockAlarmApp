@@ -1,7 +1,0 @@
-**Changelog:**
-- Control states now get saved when switching tabs
-- Made hub names sticky
-- Added light/dark/system theme selector (@abynox )
-- Fixed safety disclaimer buttons overflowing
-- Fixed spacing in settings after login button
-- Added linux binary

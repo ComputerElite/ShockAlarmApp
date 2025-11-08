@@ -1,8 +1,0 @@
-**Changelog:**
-- Fixed Alarm tones duplicating with AlarmServer
-- Shockers and accounts will now reload automatically on app start
-- Fixed f5 reloading not working in sub pages
-- Added support for managing Api tokens and sessions
-- Fixed User Agent not being correct on login request
-
-Also yes, I finally managed to go to version 0.1.0, woohoo

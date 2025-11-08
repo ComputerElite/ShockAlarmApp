@@ -1,2 +1,0 @@
-**Changelog:**
-- Fixed layout on mobile for account edit

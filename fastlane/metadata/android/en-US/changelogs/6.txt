@@ -1,3 +1,0 @@
-**Changelog:**
-- **Fixed the stop button**
-- Added WebSocket support for controlling the shockers (can be changed via settings)

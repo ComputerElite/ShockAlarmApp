@@ -1,2 +1,0 @@
-**Changelog:**
-- Added live pattern saving and playback

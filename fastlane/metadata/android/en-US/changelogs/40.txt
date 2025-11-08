@@ -1,4 +1,0 @@
-**Changelog:**
-- Fixed duration limit being displayed wrong under certain circumstances
-- Confirm shock setting now also applies to live screen
-- New enforce limits slider has been added to confirm shock settings which will globally limit the app to the specified duration and intensity

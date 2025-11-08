@@ -1,2 +1,0 @@
-- Added login via token proxy for web
-- Added new stats button in logs

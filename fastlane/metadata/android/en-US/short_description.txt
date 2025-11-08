@@ -1,1 +1,0 @@
-Material3 app for controlling OpenShock shockers

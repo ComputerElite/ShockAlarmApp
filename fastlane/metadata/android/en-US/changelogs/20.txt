@@ -1,4 +1,0 @@
-**Changelog:**
-- Added Windows binaries
-- Added Windows installer (@noideaman)
-- Added Dockerfile for web deploy (@noideaman)

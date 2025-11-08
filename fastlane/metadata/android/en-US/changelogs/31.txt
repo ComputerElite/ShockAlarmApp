@@ -1,3 +1,0 @@
-**Changelog:**
-- Added option for seperate intensity sliders for shock and vibrate
-- Android is now checking for battery optimisation when enabling alarms

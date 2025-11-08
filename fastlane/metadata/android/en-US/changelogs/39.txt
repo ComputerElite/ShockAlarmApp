@@ -1,3 +1,0 @@
-**Changelog:**
-- Fixed crash on random page when no shockers are selected
-- Fixed crash on alarm tone creation when adding multiple components in succession

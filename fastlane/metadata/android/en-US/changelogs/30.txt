@@ -1,9 +1,0 @@
-**Changelog:**
-- Fixed overdraw over the edge on live controls
-- Added ability to lerp intensity (aka always show 100%)
-- Added error dialogs when live connection in individual shocker view fails
-- Fixed Alarm Server on Android
-- Fixed page swipe being abrupt when swiping in the main menu
-- Fixed page swipe having a weird padding which looks wrong
-- Internal code cleanup
-- Added small spacing after tone selector when it's enabled

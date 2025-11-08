@@ -1,2 +1,0 @@
-Inital release:
-- Alarms not working but everything else is

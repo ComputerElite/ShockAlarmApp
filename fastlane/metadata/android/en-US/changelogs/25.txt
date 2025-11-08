@@ -1,7 +1,0 @@
-**Changelog:**
-- Fixed swiping to left an right on live controls (3 dots in grouped shocker selector) switching page
-- Fixed sending data when intensity is at 0 for live control
-- Fixed loop not extending it's length when you don't move your finger
-- Made intensity the background text of live widget
-- Fixed live permission for shared shockers not being parsed
-- Added latency text

@@ -1,5 +1,0 @@
-**Changelog:**
-- Fixed alignment of hub filter to be centered
-- Added info that you need to be logged in on bottom screen for it to be useful
-- Added pop up when connected to OpenShock AP that has a button to open the captive portal
-- Reworded Text when pairing a hub

@@ -1,6 +1,0 @@
-[submodule "flutter"]
-	path = flutter
-	url = https://github.com/flutter/flutter.git
-[submodule "battery_optimization_helper"]
-	path = battery_optimization_helper
-	url = https://github.com/ComputerElite/battery_optimization_helper

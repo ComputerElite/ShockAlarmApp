@@ -1,7 +1,0 @@
-**Changelog:**
-- Added grouped controls mode: lets you control multiple shockers at the same time.
-- Added live shocker logs: Shocker logs are now update live!
-- Added hub online indicator to show whether a hub is online or not
-- Added multi shocker logs: Via the grouped shocker view you can select multiple shockers and then view the logs combined in one view with live updates!
-- Alarms may be a bit broken atm, a fix is in the works
-- Internal code cleanup

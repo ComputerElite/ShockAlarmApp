@@ -1,4 +1,0 @@
-**Changelog:**
-- Added safety disclaimer on login
-- Added randomized intensity and duration via settings.
-- Updated pause and unpause text to icons
