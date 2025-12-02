@@ -644,6 +644,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           children: [
             Text("Theme"),
             SegmentedButton<int>(
+              showSelectedIcon: false,
               segments: [
                 ButtonSegment(value: 0, label: Icon(Icons.devices)),
                 ButtonSegment(value: 1, label: Icon(Icons.sunny)),
