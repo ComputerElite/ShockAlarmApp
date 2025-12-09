@@ -126,7 +126,7 @@ You can download a Portable version (zip file) from the [releases](https://githu
 - [x] Stop live playback when changing type
 - [x] Make sure text in popups is scrollable so it can be read completely
 - [x] Implement login V2 (Android only currently)
-- [ ] Implement Shares V2 (once officially declared done in backend and implementation in official frontend exists. Can't make sense of the api rn without explenation)
+- [x] Implement Shares V2 (once officially declared done in backend and implementation in official frontend exists. Can't make sense of the api rn without explenation)
 
 # Planned settings
 - [x] Hide/unhiding of the delay option
