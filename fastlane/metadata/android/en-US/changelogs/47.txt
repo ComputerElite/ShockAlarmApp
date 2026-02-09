@@ -1,0 +1,2 @@
+**Changelog:**
+- Fixed shocker logs doubling with live shocker logs (reported by @locked_shock)

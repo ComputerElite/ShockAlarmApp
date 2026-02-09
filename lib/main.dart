@@ -18,7 +18,7 @@ const String issues_url =
     "https://github.com/ComputerElite/ShockAlarmApp/issues";
 
 String GetUserAgent() {
-  return "ShockAlarm/0.4.2";
+  return "ShockAlarm/0.4.3";
 }
 
 bool isAndroid() {
@@ -26,16 +26,15 @@ bool isAndroid() {
 }
 
 Future requestPermissions() async {
-  
   if (!isAndroid()) return;
   try {
-      final bool granted = await MethodChannel('shock-alarm/permissions').invokeMethod('requestScheduleExactAlarmPermission');
-      return granted;
-    } on PlatformException catch (e) {
-      print("Failed to request permission: '${e.message}'.");
-      return false;
-    }
-  
+    final bool granted = await MethodChannel('shock-alarm/permissions')
+        .invokeMethod('requestScheduleExactAlarmPermission');
+    return granted;
+  } on PlatformException catch (e) {
+    print("Failed to request permission: '${e.message}'.");
+    return false;
+  }
 }
 
 void initNotification(AlarmListManager manager) async {
@@ -143,7 +142,7 @@ void main() async {
 
   AlarmListManager manager = AlarmListManager();
   await manager.loadAllFromStorage();
-  
+
   CaptivePortalService service = CaptivePortalService();
   service.continuousScan();
   UpdateChecker updateChecker = UpdateChecker();
