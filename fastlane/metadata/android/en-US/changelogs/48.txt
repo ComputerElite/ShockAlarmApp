@@ -1,0 +1,2 @@
+**Changelog:**
+- Potentially fixed potentially bad timezone names for Alarm Server

@@ -19,7 +19,7 @@ abstract class AlarmManager {
 class AndroidShockAlarmManager implements AlarmManager {
   @override
   AlarmManagerType? type = AlarmManagerType.android;
-  
+
   @override
   Future scheduleAlarms(List<Alarm> alarms) async {
     for (var alarm in alarms) {
@@ -30,9 +30,7 @@ class AndroidShockAlarmManager implements AlarmManager {
   }
 
   @override
-  Future deleteAlarm(Alarm alarm) async {
-    
-  }
+  Future deleteAlarm(Alarm alarm) async {}
 
   @override
   Future<ErrorContainer<List<Alarm>>> getAlarms() async {
@@ -44,21 +42,19 @@ class AndroidShockAlarmManager implements AlarmManager {
     // Alarms are saved automatically, nothing has to be done here
     return true;
   }
-  
+
   @override
   Future<ErrorContainer<List<AlarmTone>>> getAlarmTones() async {
     return ErrorContainer([], null);
   }
-  
+
   @override
   Future<bool> saveTone(AlarmTone tone) async {
     return true;
   }
-  
-  @override
-  Future deleteTone(AlarmTone tone) async{
 
-  }
+  @override
+  Future deleteTone(AlarmTone tone) async {}
 }
 
 class AlarmServerShockAlarmManager implements AlarmManager {
@@ -66,30 +62,32 @@ class AlarmServerShockAlarmManager implements AlarmManager {
   AlarmManagerType? type = AlarmManagerType.server;
 
   @override
-  Future scheduleAlarms(List<Alarm> alarms) async {
-    
-  }
+  Future scheduleAlarms(List<Alarm> alarms) async {}
 
   @override
   Future deleteAlarm(Alarm alarm) async {
     Token? userToken = AlarmListManager.getInstance().getAlarmServerUserToken();
-    if(userToken == null) {
+    if (userToken == null) {
       return;
     }
-    var response = await AlarmServerClient().DeleteRequest(userToken, "/api/v1/alarms/", jsonEncode(alarm.toAlarmServerAlarm(userToken.userId)));
-    if(response.statusCode == 200) {
+    var response = await AlarmServerClient().DeleteRequest(
+        userToken,
+        "/api/v1/alarms/",
+        jsonEncode(await alarm.toAlarmServerAlarm(userToken.userId)));
+    if (response.statusCode == 200) {
       return;
     }
   }
-  
+
   @override
   Future deleteTone(AlarmTone tone) async {
     Token? userToken = AlarmListManager.getInstance().getAlarmServerUserToken();
-    if(userToken == null) {
+    if (userToken == null) {
       return;
     }
-    var response = await AlarmServerClient().DeleteRequest(userToken, "/api/v1/tones/", jsonEncode(tone.toAlarmServerJson()));
-    if(response.statusCode == 200) {
+    var response = await AlarmServerClient().DeleteRequest(
+        userToken, "/api/v1/tones/", jsonEncode(tone.toAlarmServerJson()));
+    if (response.statusCode == 200) {
       return;
     }
   }
@@ -97,31 +95,36 @@ class AlarmServerShockAlarmManager implements AlarmManager {
   @override
   Future<ErrorContainer<List<Alarm>>> getAlarms() async {
     Token? userToken = AlarmListManager.getInstance().getAlarmServerUserToken();
-    if(userToken == null) {
+    if (userToken == null) {
       return ErrorContainer([], "Token is invalid.");
     }
-    ErrorContainer<List<Alarm>> alarms = await AlarmServerClient().getAlarms(userToken);
+    ErrorContainer<List<Alarm>> alarms =
+        await AlarmServerClient().getAlarms(userToken);
     return alarms;
   }
 
   @override
   Future<ErrorContainer<List<AlarmTone>>> getAlarmTones() async {
     Token? userToken = AlarmListManager.getInstance().getAlarmServerUserToken();
-    if(userToken == null) {
+    if (userToken == null) {
       return ErrorContainer([], "Token is invalid.");
     }
-    ErrorContainer<List<AlarmTone>> alarms = await AlarmServerClient().getAlarmTones(userToken);
+    ErrorContainer<List<AlarmTone>> alarms =
+        await AlarmServerClient().getAlarmTones(userToken);
     return alarms;
   }
 
   @override
   Future<bool> saveAlarm(Alarm alarm) async {
     Token? userToken = AlarmListManager.getInstance().getAlarmServerUserToken();
-    if(userToken == null) {
+    if (userToken == null) {
       return false;
     }
-    var response = await AlarmServerClient().PostRequest(userToken, "/api/v1/alarms", jsonEncode(alarm.toAlarmServerAlarm(userToken.userId)));
-    if(response.statusCode == 200) {
+    var response = await AlarmServerClient().PostRequest(
+        userToken,
+        "/api/v1/alarms",
+        jsonEncode(await alarm.toAlarmServerAlarm(userToken.userId)));
+    if (response.statusCode == 200) {
       alarm.serverId = jsonDecode(response.body)["CreatedId"];
       AlarmListManager.getInstance().saveAlarm(alarm, updateServer: false);
       return true;
@@ -132,11 +135,12 @@ class AlarmServerShockAlarmManager implements AlarmManager {
   @override
   Future<bool> saveTone(AlarmTone tone) async {
     Token? userToken = AlarmListManager.getInstance().getAlarmServerUserToken();
-    if(userToken == null) {
+    if (userToken == null) {
       return false;
     }
-    var response = await AlarmServerClient().PostRequest(userToken, "/api/v1/tones", jsonEncode(tone.toAlarmServerJson()));
-    if(response.statusCode == 200) {
+    var response = await AlarmServerClient().PostRequest(
+        userToken, "/api/v1/tones", jsonEncode(tone.toAlarmServerJson()));
+    if (response.statusCode == 200 && response.body.startsWith("{")) {
       tone.serverId = jsonDecode(response.body)["CreatedId"];
       AlarmListManager.getInstance().saveTone(tone, updateServer: false);
       return true;
@@ -145,10 +149,7 @@ class AlarmServerShockAlarmManager implements AlarmManager {
   }
 }
 
-enum AlarmManagerType {
-  android,
-  server
-}
+enum AlarmManagerType { android, server }
 
 class ErrorContainer<T> {
   T? value;
@@ -157,10 +158,15 @@ class ErrorContainer<T> {
 }
 
 class AlarmServerClient {
-  Future<ErrorContainer<Token>> loginOrRegister(String serverAddress, String username, String password, bool register) async {
-    Token t = Token(DateTime.now().microsecondsSinceEpoch, "", server: serverAddress);
+  Future<ErrorContainer<Token>> loginOrRegister(String serverAddress,
+      String username, String password, bool register) async {
+    Token t =
+        Token(DateTime.now().microsecondsSinceEpoch, "", server: serverAddress);
     t.flavor = TokenFlavor.alarmserver;
-    var response = await PostRequest(t, "/api/v1/user/${register ? "register" : "login"}", jsonEncode({"Username": username, "Password": password}));
+    var response = await PostRequest(
+        t,
+        "/api/v1/user/${register ? "register" : "login"}",
+        jsonEncode({"Username": username, "Password": password}));
     if (response.statusCode != 200) {
       return ErrorContainer(null, response.body);
     }
@@ -175,11 +181,18 @@ class AlarmServerClient {
     return ErrorContainer(t, null);
   }
 
-  Future<ErrorContainer<Token>> addOpenShockTokenToAccount(Token? alarmServerToken, Token? openShockToken) async {
-    if(alarmServerToken == null) {
+  Future<ErrorContainer<Token>> addOpenShockTokenToAccount(
+      Token? alarmServerToken, Token? openShockToken) async {
+    if (alarmServerToken == null) {
       return ErrorContainer(null, "Token is invalid.");
     }
-    var response = await PostRequest(alarmServerToken, "/api/v1/tokens", jsonEncode({"Token": openShockToken?.token, "Server": openShockToken?.server}));
+    var response = await PostRequest(
+        alarmServerToken,
+        "/api/v1/tokens",
+        jsonEncode({
+          "Token": openShockToken?.token,
+          "Server": openShockToken?.server
+        }));
     if (response.statusCode != 200) {
       return ErrorContainer(null, response.body);
     }
@@ -189,7 +202,7 @@ class AlarmServerClient {
   }
 
   Future<ErrorContainer<Token>> populateTokenForAccount(Token? t) async {
-    if(t == null) {
+    if (t == null) {
       return ErrorContainer(null, "Token is invalid.");
     }
     var response = await GetRequest(t, "/api/v1/tokens");
@@ -204,36 +217,35 @@ class AlarmServerClient {
   }
 
   Future<ErrorContainer<List<Alarm>>> getAlarms(Token? t) async {
-    if(t == null) {
+    if (t == null) {
       return ErrorContainer<List<Alarm>>(null, "Token is invalid.");
     }
     var response = await GetRequest(t, "/api/v1/alarms");
-    if(response.statusCode != 200) {
+    if (response.statusCode != 200) {
       return ErrorContainer(null, response.body);
     }
     print(response.body);
     var alarms = jsonDecode(response.body);
     List<Alarm> decodedAlarms = [];
-    for(var a in alarms) {
+    for (var a in alarms) {
       // now decode every single alarm
       decodedAlarms.add(Alarm.fromAlarmServerAlarm(a));
     }
     return ErrorContainer(decodedAlarms, null);
   }
 
-
   Future<ErrorContainer<List<AlarmTone>>> getAlarmTones(Token t) async {
-    if(t == null) {
+    if (t == null) {
       return ErrorContainer<List<AlarmTone>>(null, "Token is invalid.");
     }
     var response = await GetRequest(t, "/api/v1/tones");
-    if(response.statusCode != 200) {
+    if (response.statusCode != 200) {
       return ErrorContainer(null, response.body);
     }
     print(response.body);
     var alarms = jsonDecode(response.body);
     List<AlarmTone> decodedAlarmTones = [];
-    for(var a in alarms) {
+    for (var a in alarms) {
       // now decode every single alarm
       decodedAlarmTones.add(AlarmTone.fromAlarmServerJson(a));
     }
@@ -250,19 +262,23 @@ class AlarmServerClient {
 
   Future<http.Response> PostRequest(Token t, String path, String body) {
     var url = Uri.parse(t.server + path);
-    return http.post(url, headers: {
-      "Authorization": "Bearer ${t.token}",
-      "Content-Type": "application/json",
-      'User-Agent': GetUserAgent(),
-    }, body: body);
+    return http.post(url,
+        headers: {
+          "Authorization": "Bearer ${t.token}",
+          "Content-Type": "application/json",
+          'User-Agent': GetUserAgent(),
+        },
+        body: body);
   }
 
   Future<http.Response> DeleteRequest(Token t, String path, String body) {
     var url = Uri.parse(t.server + path);
-    return http.delete(url, headers: {
-      "Authorization": "Bearer ${t.token}",
-      "Content-Type": "application/json",
-      'User-Agent': GetUserAgent(),
-    }, body: body);
+    return http.delete(url,
+        headers: {
+          "Authorization": "Bearer ${t.token}",
+          "Content-Type": "application/json",
+          'User-Agent': GetUserAgent(),
+        },
+        body: body);
   }
 }
