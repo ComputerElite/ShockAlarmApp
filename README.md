@@ -1,4 +1,5 @@
-# <img src="https://raw.githubusercontent.com/ComputerElite/ShockAlarmApp/refs/heads/main/web/icons/Icon-192.png" width="30" height="30" alt="Logo"> ShockAlarm
+> [!WARNING]
+> This repository has moved to Codeberg: https://codeberg.org/kaiya/ShockAlarmApp # <img src="https://raw.githubusercontent.com/ComputerElite/ShockAlarmApp/refs/heads/main/web/icons/Icon-192.png" width="30" height="30" alt="Logo"> ShockAlarm
 [<img src="https://github.com/user-attachments/assets/713d71c5-3dec-4ec4-a3f2-8d28d025a9c6"
     alt="Get it on Obtainium"
     height="80">](https://apps.obtainium.imranr.dev/redirect.html?r=obtainium://add/https://github.com/ComputerElite/ShockAlarmApp)&nbsp;
