@@ -36120,7 +36120,7 @@ $S:4}
 A.b4m.prototype={
 $1(a){var s=A.eG().b
 s=s==null?null:s.canvasKitBaseUrl
-return(s==null?"https://www.gstatic.com/flutter-canvaskit/e4b8dca3f1b4ede4c30371002441c88c12187ed6/":s)+a},
+return(s==null?"https://www.gstatic.com/flutter-canvaskit/42d3d75a56efe1a2e9902f52dc8006099c45d937/":s)+a},
 $S:85}
 A.TO.prototype={
 a9k(){var s=this.awq(),r=$.bH.cl().ImageFilter.MakeColorFilter(s,null)
